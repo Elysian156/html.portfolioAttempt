@@ -2,23 +2,47 @@
     <html lang="pt-br">
     <meta charset="UTF-8">
     <title> Portfólio</title>
+    <link rel="stylesheet" href="style.css">
     <head>
         <body>
-            <h1> Leonardo Salani Costa Silva
-                <h2> Programador
-                <h3>Sobre mim</h3>
-                <p> Olá e bem-vindo ao meu site portfólio de contato profissional,
-                    não sou alguém que sempre teve contato com programação, entretanto
-                    possuo conhecimento intermediário e sou ávido por conhecer mais
-                    área, já que ela me é de grande curiosidade
-                </p>
-            <p</p>
+            <header>
+                <div id="langbutton">
+                    <p>Escolha o idioma</p>
+                </div>
+            </header>
+            <div class="container">
+                <div class="profile">
+                    <div class="profile_container">
+                        <div class="profile_profileImg">
+                            <img src="/images/profileImage.png" alt="Leonardo Salani">
+                        </div>
+                        <div>
+                            <h1 class="profile_name"> 
+                                Leonardo Salani Costa Silva
+                            </h1>
+                            <p>Programador iniciante</p>
+                            <p class="description">Olá e bem-vindo ao meu site portfólio de contato profissional,
+                                não sou alguém que sempre teve contato com programação, entretanto
+                                possuo conhecimento intermediário e sou ávido por conhecer mais
+                                área, já que ela me é de grande curiosidade
+                            </p>
+                            <a class="downloadBtn" href="./cv.pdf" download="Resume.pdf">
+                                Download as pdf
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </body>
         <hr>
         <footer>
-            <p>Contato: (11)94920-3466</p>
+            <p>Contato: +55 (11)94920-3466</p>
             <p>Email: Leonardo.dev_salani@hotmail.com</p>
         </footer>
     </head>
     
+    <script src="app.js"></script>
+    <script type="text/javascript">
+        var userLang = navigator.language || navigator.userLanguage;
+    </script>
     </html>
